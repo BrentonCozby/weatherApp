@@ -1,0 +1,27 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "gets the weather",
+  "main": "main.js",
+  "watch": {
+    "test": "style/master.scss"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "scss style/master.scss style/main.css",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrentonCozby/weatherApp.git"
+  },
+  "author": "Brenton Cozby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrentonCozby/weatherApp/issues"
+  },
+  "homepage": "https://github.com/BrentonCozby/weatherApp#readme",
+  "devDependencies": {
+    "watch": "^0.19.2"
+  }
+}

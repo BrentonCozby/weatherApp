@@ -15,7 +15,7 @@ $(document).ready(function() {
 					apiLink = "http://api.openweathermap.org/data/2.5/weather?zip=" + $("#chooseZip").val() + ",US&APPID=aebb13fe929de5b1d6b3355ef5dc181c";
 				}
 				else {
-					apiLink = "http://api.openweathermap.org/data/2.5/weather?q=" + zip + ",US&APPID=aebb13fe929de5b1d6b3355ef5dc181c";
+					apiLink = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",US&APPID=aebb13fe929de5b1d6b3355ef5dc181c";
 				}
 
 				$.ajax({
