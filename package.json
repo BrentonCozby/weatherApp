@@ -2,7 +2,7 @@
   "name": "weatherapp",
   "version": "1.0.0",
   "description": "gets the weather",
-  "main": "main.js",
+  "main": "index.html",
   "watch": {
     "test": "style/master.scss"
   },
