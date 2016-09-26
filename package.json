@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "scss style/master.scss style/main.css",
-    "watch": "npm-watch"
+    "build-css": "node-sass --include-path scss style/master.scss style/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/BrentonCozby/weatherApp#readme",
   "devDependencies": {
-    "watch": "^0.19.2"
+    "node-sass": "^3.10.0",
+    "nodemon": "^1.10.2"
   }
 }
