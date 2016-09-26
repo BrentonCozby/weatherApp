@@ -49,7 +49,11 @@ $(document).ready(function() {
 			getWeather(res.postal);
 
 			$("#chooseZip").change(function() {
-				getWeather( $("#chooseZip").val() );
+				$(".main-container").fadeOut(function() {
+					getWeather( $("#chooseZip").val() );
+					$(".main-container").fadeIn();
+				});
+
 			});
 
 
