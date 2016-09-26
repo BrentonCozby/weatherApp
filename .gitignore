@@ -42,3 +42,4 @@ jspm_packages
 
 # sass cache
 .sass-cache
+.sass-cache/*
