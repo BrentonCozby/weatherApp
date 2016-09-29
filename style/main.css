@@ -4,10 +4,10 @@ html, body {
   height: 100%;
   position: relative;
   font-size: 10px;
-  background-color: #237; }
+  background-color: #1D313E; }
 
 .main-container {
-  margin: auto;
+  margin: 40px auto;
   height: 100%;
   width: 22rem; }
 

@@ -42,6 +42,8 @@ $(document).ready(function() {
 
 	          $("#sunrise").html( getTime(res2.sys.sunrise) + " AM");
 	          $("#sunset").html( getTime(res2.sys.sunset) + " PM");
+
+						$(".main-container").fadeIn('fast');
 	        }
 	      });
 			}
@@ -49,9 +51,8 @@ $(document).ready(function() {
 			getWeather(res.postal);
 
 			$("#chooseZip").change(function() {
-				$(".main-container").fadeOut(function() {
+				$(".main-container").fadeOut('fast', function() {
 					getWeather( $("#chooseZip").val() );
-					$(".main-container").fadeIn();
 				});
 
 			});
