@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="style/main.css" media="screen" title="no title">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lalezar|Roboto" rel="stylesheet">
+    <link href="style/weather-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css" media="screen" title="no title">
 </head>
+
 <body>
 
-  <div class="main-container">
+    <div class="main-container">
 
-    <div class="location">
-      <p><span id="city"></span>, <span id="country"></span></p>
-      <label for="chooseZip">Zip:&nbsp;</label>
-      <input id="chooseZip" type="text" name="chooseZip">
+
+        <div class="location">
+            <p id="city"></p><p id="country"></p>
+            <br>
+            <label for="chooseZip">Zip:&nbsp;</label>
+            <input id="chooseZip" type="text" name="chooseZip" autofocus>
+        </div>
+
+        <div class="data">
+            <p>Temp</p>
+            <span id="temp"></span> <span id="temp-change">&deg;F</span>
+            <p>Weather</p>
+            <span id="weather"></span>
+            <img src="" />
+            <p>Humidity</p>
+            <span id="humidity"></span>
+            <p>Sunrise</p>
+            <span id="sunrise"></span>
+            <p>Sunset</p>
+            <span id="sunset"></span>
+        </div>
+
     </div>
 
-  	<div class="data">
-  		<p>Temp: <span id="temp"></span></p>
-  		<p>Weather: <span id="weather"></span></p>
-  		<p>Humidity: <span id="humidity"></span></p>
-      <p>Sunrise: <span id="sunrise"></span></p>
-      <p>Sunset: <span id="sunset"></span></p>
-  	</div>
-
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>

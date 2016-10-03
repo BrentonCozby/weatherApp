@@ -1,57 +1,85 @@
-@import url('_reset.css');
-
-$main-font-size: 1.8rem;
+$main-font-size: 1rem;
 $main-font-color: white;
 
-html, body {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  font-size: 10px;
-  background-color: #1D313E;
+body,
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #1D313E;
 }
 
 .main-container {
-  margin: 40px auto;
-  height: 100%;
-  width: 22rem;
+    margin: 40px auto;
+    height: 100%;
+    min-width: 300px;
+    color: $main-font-color;
+    font-family: "Roboto";
+    text-align: center;
+    display: none;
 }
 
 .location {
-  color: $main-font-color;
-
-  p {
+    margin: auto;
 
     #city,
     #country {
-      font-size: 2.1rem;
+        font-size: 2.5rem;
+        font-family: "Lalezar";
+        display: inline-block;
     }
-  }
 
-  label,
-  input {
-    font-size: $main-font-size;
-    margin: 1rem 0 0 0;
-  }
+    input,
+    label {
+        font-size: $main-font-size;
+        margin: 10px 0 0 0;
+    }
 
-  input {
-    width: 8rem;
-    color: black;
-  }
+    input {
+        width: 4rem;
+        color: #fff;
+        text-align: center;
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, .3);
+        background-color: transparent;
 
+        &:focus {
+          background-color: lighten(#1D313E, 10%);
+          box-shadow: 0 -1px 3px 1px lighten(#1D313E, 10%);
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+          outline: none;
+        }
+    }
 }
 
 .data {
+    margin: 50px auto 0;
 
-  p {
-    font-size: $main-font-size;
-    color: $main-font-color;
-    margin: 1rem 0 0 0;
+    p {
+        font-size: $main-font-size;
+        color: darken($main-font-color, 50%);
+        margin: 30px 0 10px 0;
+    }
 
     span {
-      font-size: $main-font-size;
-      color: $main-font-color;
-      margin: 1rem 0 0 0;
+        font-size: 1.6rem;
+        color: $main-font-color;
+        margin: 10px 0 0;
     }
-  }
+
+    #temp-change {
+        color: #4cf;
+        cursor: pointer;
+
+        &:hover {
+            color: #4ef;
+        }
+    }
+
+    img {
+        margin: 10px auto;
+        width: 60px;
+        display: block;
+    }
 }
