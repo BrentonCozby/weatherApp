@@ -1,29 +1,29 @@
 {
-  "name": "weatherapp",
-  "version": "1.0.0",
-  "description": "gets the weather",
-  "main": "index.html",
-  "watch": {
-    "test": "style/master.scss"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "scss style/master.scss style/main.css",
-    "build-css": "node-sass --include-path scss style/master.scss style/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BrentonCozby/weatherApp.git"
-  },
-  "author": "Brenton Cozby",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BrentonCozby/weatherApp/issues"
-  },
-  "homepage": "https://github.com/BrentonCozby/weatherApp#readme",
-  "devDependencies": {
-    "node-sass": "^3.10.0",
-    "nodemon": "^1.10.2"
-  }
+    "name": "weatherapp",
+    "version": "1.0.0",
+    "description": "gets the weather",
+    "main": "index.html",
+    "watch": {
+        "test": "style/master.scss"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "scss style/master.scss style/main.css",
+        "build-css": "node-sass --include-path scss style/master.scss style/main.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BrentonCozby/weatherApp.git"
+    },
+    "author": "Brenton Cozby",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BrentonCozby/weatherApp/issues"
+    },
+    "homepage": "https://github.com/BrentonCozby/weatherApp#readme",
+    "devDependencies": {
+        "node-sass": "^3.10.0",
+        "nodemon": "^1.10.2"
+    }
 }
