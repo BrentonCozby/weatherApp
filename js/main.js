@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     // get local zip code from ip address
     $.ajax({
-        url: "http://ipinfo.io/json",
+        url: "https://ipinfo.io/json",
         success: function(res, txt, xhr) {
             console.log(res);
             $("#city").html(res.city);
